@@ -1,0 +1,260 @@
+/* Body */
+body {
+    margin: 0;
+    display: flex;
+    font-family: system-ui, sans-serif;
+}
+
+/* H1 */
+h1 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+h1 span {
+    color: rgba(158,158,158 ,1);
+}
+
+/* H2 */
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+}
+aside h2  {
+    background-color: rgba(38,50,56 ,1);
+    color: rgba(158,158,158 ,1);
+    text-align: center;
+}
+#container h2 {
+    border-bottom: 2px solid  rgba(158,158,158 ,1);
+    padding: 0  0 10px 0;
+}
+
+/*  H3 */
+aside h3 {
+    margin: 0;
+    font-weight: 500
+}
+#container h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+/* P */
+body p {
+    font-size: 15px;
+}
+#contact p {
+    margin: 0 0 10px 0;
+}
+#apropos p {
+    margin: 30px;
+}
+#titre_cv p {
+    font-size: 18px;
+}
+#titre_cv p span {
+    border-bottom: 1px solid rgba(158,158,158 ,1);
+}
+#competences p, section p {
+    margin: 0;
+}
+
+/* UL */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+aside ul {
+    margin: 30px;
+}
+
+#recommandations ul {
+    display: flex;
+}
+
+
+/* Aside (gauche de la page) */
+aside {
+    background-color: rgba(158,158,158 ,1);
+    width: 30%;
+    min-height: 100vh;
+}
+
+/*  Photo CV */
+aside img {
+    width: 150px;
+    border: 1px solid #0000005c;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #0000005c;
+    display: flex;
+    margin: 15px auto;
+}
+
+/* A propos */
+#apropos {
+    margin-bottom: 100px;
+}
+
+/* Competences icons */
+.fa-check-circle {
+    margin-right: 5px;
+}
+
+/*  Loisirs */
+#loisirs {
+    display: flex;
+    justify-content: space-evenly;
+}
+.cercle_loisirs {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(38,50,56 ,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loisirs i {
+    color: rgba(38,50,56 ,1);
+    font-size: 25px;
+}
+
+/* Container (droite de la page)  */
+#container {
+    width: 70%;
+    margin: 40px;
+}
+#container i {
+    color: rgba(158,158,158 ,1);
+    margin-right: 10px;
+}
+#experiences, #recommandations {
+    margin-top: 50px;
+}
+
+/* photo responsive tablet */
+#image_responsive {
+    display: none;
+}
+
+/* Titre CV */
+#titre_cv {
+    margin-bottom: 100px;
+}
+
+/* Formation et experiences pro (titre, icons, texte) */
+#container h2 i {
+    font-size: 25px;
+}
+#formation li, #experiences li {
+    display: flex;
+    align-items: baseline;
+}
+.bulletpoint_text {
+    display: flex;
+    align-items: baseline;
+    margin-right: 100px;
+}
+.bulletpoint_text i {
+    font-size: 10px;
+}
+.date_lieu {
+    width: 100px;
+}
+.metier {
+    margin-bottom: 5px;
+}
+
+/* Recommandations */
+#recommandations li {
+    display: block;
+    margin-right: 100px;
+    width: 300px;
+}
+#recommandations span {
+    font-weight: 600;
+}
+
+
+/* -----MEDIA QUERIES----- */
+
+@media screen and (max-width:770px) {
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    aside {
+        width: 100%;
+    }
+    aside {
+        text-align: center;
+    }
+    #photo {
+        display: none;
+    }
+    #titre_cv p {
+        margin: 0;
+    }
+    #titre_cv {
+        text-align: center;
+    }
+    #image_responsive {
+        display: block;
+        width: 150px;
+        border: 1px solid #0000005c;
+        border-radius: 50%;
+        margin: 20px auto;
+    }
+    #container {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .bulletpoint_text {
+        margin-right: 0;
+        text-align: center;
+    }
+    .bulletpoint_text i {
+        display: none;
+    }
+    .description {
+        text-align: center;
+    }
+    #recommandations ul {
+        display: block;
+        text-align: center;
+    }
+    #recommandations li {
+        margin: 10px auto;
+        width: auto;
+    }
+    h2 {
+        text-align: center;
+    }
+    #formation li, #experiences li {
+        display: block;
+        margin-top: 50px;
+    }
+    .date_lieu {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    #apropos {
+        margin-bottom: 300px;
+    }
+}
+
+@media screen and (min-width:2300px) {
+    #apropos {
+        margin-bottom: 400px;
+    }
+    section ul {
+        margin-top: 50px;
+    }
+}
