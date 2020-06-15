@@ -93,11 +93,6 @@ aside img {
     margin: 15px auto;
 }
 
-/* A propos */
-#apropos {
-    margin-bottom: 100px;
-}
-
 /* Competences icons */
 .fa-check-circle {
     margin-right: 5px;
@@ -142,7 +137,7 @@ aside img {
 
 /* Titre CV */
 #titre_cv {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 /* Formation et experiences pro (titre, icons, texte) */
@@ -200,6 +195,7 @@ aside img {
     }
     #titre_cv {
         text-align: center;
+        margin-bottom: 0;
     }
     #image_responsive {
         display: block;
@@ -210,6 +206,9 @@ aside img {
     }
     #container {
         margin: auto;
+    }
+    #recommandations li {
+        margin-right: 75px;
     }
 }
 
@@ -244,17 +243,20 @@ aside img {
     }
 }
 
-@media screen and (min-width:2000px) {
+@media screen and (min-width:1200px) {
     #apropos {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
     }
 }
 
-@media screen and (min-width:2300px) {
+@media screen and (min-width:2200px) {
     #apropos {
         margin-bottom: 400px;
     }
     section ul {
         margin-top: 50px;
+    }
+    #titre_cv {
+        margin-bottom: 100px;
     }
 }
